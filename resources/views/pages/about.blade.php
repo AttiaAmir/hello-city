@@ -1,4 +1,8 @@
 @extends('app')
+
+@section('title')
+ About us | Hello City 
+@endsection
 @section('content')
 
         <p>Built with &hearts; by Attia Amir</p>
