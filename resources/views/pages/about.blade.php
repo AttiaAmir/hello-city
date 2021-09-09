@@ -1,8 +1,8 @@
 @extends('app')
 
-@section('title')
- About us | Hello City 
-@endsection
+@section('title','About us | '. config('app.name'))
+ 
+
 @section('content')
 
         <p>Built with &hearts; by Attia Amir</p>
