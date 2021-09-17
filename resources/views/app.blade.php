@@ -5,17 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>@yield('title')</title>
-
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         
     </head>
-    <body >
+    <body class="py-6 flex flex-col justify-between items-center min-h-screen">
+        <main class="flex flex-col justify-center items-center" role="main"> 
         @yield('content')
+
+        </main>
+       
         
-        <footer>
+        <footer class="text-gray-400">
            
     <p>&copy; Copyright {{date('Y')}} 
     @if(! Route::is('about'))
-    &middot; <a href={{ route('about') }}>About us</a></p>
+    &middot; <a href={{ route('about') }} class="text-indigo-500 hover:text-indigo-600 underline">About us</a></p>
     @endif        
     </footer>
              
