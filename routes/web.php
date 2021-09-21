@@ -5,6 +5,11 @@ Route::get('/', function(){
     return view('pages/home');
 })->name('home');
 
-Route::get('/about-us', function(){
-    return view('pages/about');
-})->name('about');
+Route::get('/abous-us', fn() => view('pages/about')) ->name('about');
+
+// ou 
+// Route::view('/about-us','pages/about')->name('about');
+
+
+
+
